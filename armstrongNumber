@@ -1,0 +1,15 @@
+
+Check if the given number is an armstrong number or not.
+
+static boolean isArmstrong(int num){
+    int sum = 0;
+    while(num > 0){
+        int rem = num % 10;
+        num = num/10;
+        sum += rem*rem*rem;
+    }
+    if(sum == num){
+        return true;
+    }
+    return false;
+}
