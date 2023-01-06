@@ -1,0 +1,8 @@
+ListNode temp = head;
+String str = "";
+while(temp  != null){
+    str += temp.val;
+    temp = temp.next;
+}
+
+return Integer.parseInt(str,2);
